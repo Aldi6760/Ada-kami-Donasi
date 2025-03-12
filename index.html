@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ada Kami - Donasi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header class="transparent-header" id="header">
+        <div class="logo">Kami Ada</div>
+        <nav class="nav-end">
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#donate">Donasi</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+        <a href="#donate" class="donate-btn">Donasi Sekarang</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Ayo Berdonasi untuk Masa Depan yang Lebih Baik</h1>
+        <p>Bantu mereka yang membutuhkan dengan berdonasi sekarang.</p>
+        <a href="#donate" class="donate-btn">Donasi Sekarang</a>
+    </section>
+
+    <!-- Kenapa Memilih Kita -->
+    <section id="about" class="why-choose-us">
+        <h2>Kenapa Memilih Kita?</h2>
+        <div class="benefits">
+            <div class="benefit-item">
+                <img src="Aset/aset4.jpg" alt="Kepercayaan">
+                <h3>Kepercayaan</h3>
+                <p>Transparansi dalam setiap donasi yang masuk dan disalurkan.</p>
+            </div>
+            <div class="benefit-item">
+                <img src="Aset/aset2.jpg" alt="Mudah">
+                <h3>Mudah & Cepat</h3>
+                <p>Proses donasi yang simpel dan dapat dilakukan kapan saja.</p>
+            </div>
+            <div class="benefit-item">
+                <img src="Aset/aset3.jpg" alt="Dampak Besar">
+                <h3>Dampak Besar</h3>
+                <p>Setiap donasi memberikan perubahan nyata bagi mereka yang membutuhkan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kategori Donasi -->
+    <section class="donation-categories">
+        <h2>Kategori Donasi</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="Aset/pendidikanA2.jpg" alt="Pendidikan">
+                <h3>Pendidikan</h3>
+                <p>Bantu anak-anak mendapatkan pendidikan yang layak.</p>
+            </div>
+            <div class="category">
+                <img src="Aset/kesehatana2.jpg" alt="Kesehatan">
+                <h3>Kesehatan</h3>
+                <p>Dukung biaya pengobatan bagi yang membutuhkan.</p>
+            </div>
+            <div class="category">
+                <img src="Aset/aset1.jpg" alt="Bencana">
+                <h3>Bencana Alam</h3>
+                <p>Bantu korban bencana mendapatkan bantuan dengan cepat.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Apa Kata Mereka?</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"Sangat mudah untuk berdonasi! Saya merasa yakin donasi saya sampai ke yang membutuhkan."</p>
+                <h4>- Aulia, Jakarta</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Transparansi di platform ini luar biasa. Saya dapat melihat dampak nyata dari donasi saya."</p>
+                <h4>- Budi, Bandung</h4>
+            </div>
+            <div class="testimonial">
+                <p>""Saya sangat terkesan dengan transparansi platform ini. Setiap donasi benar-benar tersalurkan dan memberikan dampak nyata bagi mereka yang membutuhkan."</p>
+                <h4>- Aldi, pekalongan</h4>
+            </div>
+            <div class="testimonial">
+                <p>"istemnya mudah digunakan, cepat, dan terpercaya. Saya bisa melihat langsung bagaimana donasi saya membantu sesama."</p>
+                <h4>- Yooran, jakarta selatan</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Bukan hanya berdonasi, tetapi saya juga merasa menjadi bagian dari perubahan besar. Terima kasih telah menyediakan platform yang aman dan transparan!"</p>
+                <h4>- Sigit, Depok</h4>
+            </div>
+        </div>
+        <div class="testimonial-nav">
+            <button class="nav-button prev-btn">&lt;</button>
+            <button class="nav-button next-btn">&gt;</button>
+        </div>
+    </section>
+
+    <section id="donate" class="donation-form">
+        <h2>Donasi Sekarang</h2>
+        <!-- total donasi -->
+        <div class="total-donation">
+            <h3>Total Donasi Terkumpul</h3>
+            <p id="total-donasi">Rp 1.250.000.000</p>
+        </div>
+        <form id="payment-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="amount">Jumlah Donasi (IDR):</label>
+            <input type="number" id="amount" name="amount" required min="1000">
+
+            <label for="payment-method">Metode Pembayaran:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="bank">Transfer Bank</option>
+                <option value="gopay">GoPay</option>
+                <option value="ovo">OVO</option>
+                <option value="paypal">PayPal</option>
+            </select>
+
+            <button type="submit" class="donate-btn">Bayar Sekarang</button>
+        </form>
+
+        <div class="share-section">
+            <h3>Bagikan Donasi Ini</h3>
+            <div class="social-share-buttons">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://websiteanda.com" target="_blank" class="social-share fb">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://twitter.com/intent/tweet?url=https://websiteanda.com&text=Ayo%20berdonasi%20untuk%20membantu%20sesama!" target="_blank" class="social-share twitter">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://api.whatsapp.com/send?text=Ayo%20berdonasi%20di%20https://websiteanda.com" target="_blank" class="social-share wa">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://www.linkedin.com/shareArticle?url=https://websiteanda.com&title=Ayo%20Donasi%20Sekarang!" target="_blank" class="social-share linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+        
+        <div class="modal-background" id="donationModal">
+            <div class="modal-content">
+                <h2>Terima Kasih Telah Berdonasi!</h2>
+                <p>Donasi Anda sangat berarti bagi mereka yang membutuhkan.</p>
+                <button onclick="closeModal()">Tutup</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="contact">
+        <h2>Hubungi Kami</h2>
+        <form class="contact-form">
+            <label for="name"><i class="fas fa-user"></i> Nama</label>
+            <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+
+            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+            <input type="email" id="email" placeholder="Masukkan email Anda" required>
+
+            <label for="message"><i class="fas fa-comment"></i> Pesan</label>
+            <textarea id="message" placeholder="Tulis pesan Anda..." required></textarea>
+
+            <button type="submit"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
+        </form>
+        
+        <!-- Peta Lokasi -->
+<div class="map-container">
+    <h3>Lokasi Kami</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.219792028808!2d106.7448157740254!3d-6.234732461053299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14675571c2f%3A0x50fb188c327c6bae!2sUniversitas%20Budi%20Luhur!5e0!3m2!1sid!2sid!4v1741750042894!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+        
+</div>
+
+
+        <div class="contact-info">
+            <div class="contact-info-item">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Telepon</h3>
+                <p>+62 852 1142 6640</p>
+            </div>
+            <div class="contact-info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Alamat</h3>
+                <p>Jl. Raya No. 123, Jakarta</p>
+            </div>
+            <div class="contact-info-item">
+                <i class="fas fa-clock"></i>
+                <h3>Jam Operasional</h3>
+                <p>Senin - Jumat: 08.00 - 17.00</p>
+                <p>Sabtu - Minggu: 10.00 - 15.00</p>
+            </div>
+        </div>
+    </section>
+    <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Kami Ada</h2>
+                <p>Mewujudkan perubahan dengan donasi yang transparan dan terpercaya.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#donate">Donasi</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h3>Layanan</h3>
+                <ul>
+                    <li><a href="#">Program Donasi</a></li>
+                    <li><a href="#">Laporan Transparansi</a></li>
+                    <li><a href="#">Cara Berdonasi</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Kontak Kami</h3>
+                <p><i class="fas fa-phone-alt"></i> +62 852 1142 6640</p>
+                <p><i class="fas fa-envelope"></i> support@kamiada.org</p>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Raya No. 123, Jakarta</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Kami Ada. Semua Hak Dilindungi. | <a href="#">Kebijakan Privasi</a> | <a href="#">Syarat & Ketentuan</a></p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
