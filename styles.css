@@ -11,9 +11,12 @@ body {
     position: relative;
     color: white;
     background: url('Aset/hero.jpg') no-repeat center/cover;
-    overflow: hidden;
+    overflow: auto;
     width: 100%;
     height: 100%;
+    overflow-x: hidden; 
+    overflow-y: auto;
+    
 }
 
 /* Efek blur pada background */
