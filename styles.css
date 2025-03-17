@@ -11,6 +11,9 @@ body {
     position: relative;
     color: white;
     background: url('Aset/hero.jpg') no-repeat center/cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 /* Efek blur pada background */
@@ -763,10 +766,4 @@ body::before {
 #backToTop:hover {
     background: #FFD700;
 }
-
-
-
-
-
-
 
